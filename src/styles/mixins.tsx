@@ -14,6 +14,14 @@ export const lineHeight = (pxSize : number) => `line-height: ${pxSize / 16}rem`;
     `
  _____________________________________________________________*/
 
+ // First Letter to UpperCase
+export const firstLetterUpperCase = (e : string) => {
+    return e.charAt(0).toUpperCase() + e.slice(1)
+}
+/* usage: See "MaskRatio.tsx"
+
+_____________________________________________________________*/
+
 // Ratios 
 export const Ratios = {
     video: '50%', // 2:1
