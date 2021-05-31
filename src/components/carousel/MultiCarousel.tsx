@@ -12,6 +12,7 @@ const MultiCarousel:FC<CarouselProps>= ({children, withSubTitle, withBoxShadow})
     return (
         <Container withSubTitle={withSubTitle} withBoxShadow={withBoxShadow}>
             <Carousel
+            aria-hidden="false"
                 className="carousel"
                 infinite
                 customButtonGroup={<CustomCarouselButtonsGroup/>}

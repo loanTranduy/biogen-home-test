@@ -42,7 +42,7 @@ const Section:FC<Props> = ({children, title, withRightLink, to}) => {
         <Container>
             {title && withRightLink ? 
                 <Wrapper>
-                    <h4>{title.charAt(0).toUpperCase() + title.slice(1)}</h4>
+                    <h4>{firstLetterUpperCase(title)}</h4>
                     {to &&<CustomLink to={to}>{withRightLink}</CustomLink>}
                 </Wrapper>
             : title && <h4>{firstLetterUpperCase(title)}</h4>

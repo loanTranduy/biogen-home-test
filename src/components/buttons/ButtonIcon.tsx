@@ -37,11 +37,12 @@ const Button = styled.button`
 type Props = {
     onClick?: () => void,
     icon: string,
-    disabled?: boolean
+    disabled?: boolean,
+    name: string
 }
 
-const ButtonIcon:FC<Props> = ({onClick, icon, disabled}) => (
-  <Button onClick={onClick} disabled={disabled}>
+const ButtonIcon:FC<Props> = ({onClick, icon, disabled, name}) => (
+  <Button name={name} onClick={onClick} disabled={disabled}>
     <ReactSVG src={icon} />
   </Button>
 );
