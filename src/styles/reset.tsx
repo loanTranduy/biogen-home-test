@@ -7,6 +7,9 @@ import { fontSize, lineHeight } from './mixins';
 
 export const GlobalStyle = createGlobalStyle`
   ${reset}
+  #root{
+    overflow-x: hidden;
+  }
 
     * {
       box-sizing: border-box;
@@ -56,4 +59,9 @@ export const GlobalStyle = createGlobalStyle`
     button, a {
       cursor: pointer;
     }
+
+    .icon-arrow:before { content: '\e800'; } /* '' */
+.icon-play:before { content: '\e801'; } /* '' */
+.icon-plus:before { content: '\e802'; } /* '' */
+.icon-star:before { content: '\e803'; } /* '' */
 `;

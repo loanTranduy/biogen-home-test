@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import { FC } from 'react'
 import CustomLink from '../dumb/CustomLink'
-import { titleMarginBottom } from '../../styles/variables';
+import { gutterLarge, titleMarginBottom } from '../../styles/variables';
 import { firstLetterUpperCase } from '../../styles/mixins';
+import { media } from '../../styles/mediaqueries';
 
 const Container = styled.section`
   padding-bottom: 48px;
@@ -19,6 +20,9 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  ${media.sm`
+    margin: 0 ${gutterLarge}px ${titleMarginBottom}px; 
+  `}
 `;
 
   type Props = {

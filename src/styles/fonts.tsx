@@ -5,7 +5,6 @@ import PoppinsSemiBoldWoff from '../assets/fonts/poppins/poppins-semibold-webfon
 
 import { createGlobalStyle } from 'styled-components';
 
-
 export const InjectFont = createGlobalStyle`
     @font-face {
         font-family: 'poppinsmedium';

@@ -6,7 +6,7 @@ import { containerWidth } from '../../styles/variables';
 
 const Container = styled.div`
   margin: 64px 16px 40px;
-  
+  background: pink;
   ${media.lg`
     max-width: ${containerWidth}px;
     margin: 16px auto 64px auto ; 
