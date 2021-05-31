@@ -13,6 +13,7 @@ export const Absolute = styled.div`
     max-width: 196px;
     ${media.lg`
         width: 227px;
+        max-width: 227px;
     `}
 `;
 
@@ -77,11 +78,14 @@ export const Footer = styled.div`
 `;
 
 export const AlignBottom = styled.div`
-${flexBox( "column" , "flex-end", "flex-start")};
+  ${flexBox( "column" , "flex-end", "flex-start")};
   ${fontSize(16)};
   ${lineHeight(24)};
   margin-bottom: 4px;
-  min-height: 72px; // dev to put dynamic value 
+  min-height: 72px; // TODO dev to put dynamic value 
+  ${media.lg`
+    min-height: 64px; // TODO dev to put dynamic value 
+  `}
 `;
 
 export const FlexCenter = styled.div`

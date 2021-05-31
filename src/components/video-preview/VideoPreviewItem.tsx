@@ -28,6 +28,7 @@ const VideoPreviewItem: React.FC<Props> = ({to, image, imageAlt, tag, completedT
 return (
         <Box href={to}>
             <MaskRatio ratio="video">
+                {/* //TODO srcSet  */}
                 <img src={image} alt={imageAlt}/>
                 {tag && <Tag small>{tag}</Tag>}
                 {completedTime && <Tag backgroundColor="black70">{makeTimeReadable(completedTime)}</Tag>}

@@ -44,7 +44,7 @@ ${media.sm`
         transform: ${(props: CarouselProps) => props.withSubTitle ? 'none' : 'translateY(-50%)'};
     `}
     ${media.lg`
-      top: ${(props: CarouselProps) => props.withSubTitle ? '68px' :  '50%'};
+      top: ${(props: CarouselProps) => props.withSubTitle ? '60px' :  '50%'};
       bottom: auto;
     `}
   } 

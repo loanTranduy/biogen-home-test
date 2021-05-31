@@ -6,57 +6,57 @@ import { TVideoPreviewList } from '../components/video-preview/VideoPreview.type
 
 export const mockedVideoPreviews: TVideoPreviewList = [
     {
-      title: '1/ MS und Familienplanung Immuntherapien bei MS in ...',
+      title: 'MS und Familienplanung Immuntherapien bei MS',
       completedTime: 162,
       totalTime: 1200,
-      tag: 'first',
+      tag: 'episode 1',
       image: Episode4,
-      imageAlt: 'alt',
+      imageAlt: 'Biology course',
       link: "/"
     },
     {
-      title: '2/ MS und Familienplanung MS-Aktivität in der Schwangerschaft und danach planung MS-Aktivität in der Schwangerschaft und danach planung MS-Aktivität in der Schwangerschaft und danach',
+      title: 'MS und Familienplanung MS-Aktivität in der Schwangerschaft und danach with extra text to check ellipsis',
       completedTime: 90,
       totalTime: 100,
       tag: 'episode 2',
       image: Episode3,
-      imageAlt: 'alt',
+      imageAlt: 'Biology course',
       link: "/"
     },
     {
-      title: '3/ Unter der Lupe – Können wir für Alzheimer von der MS lernen?',
+      title: 'Unter der Lupe – Können wir für Alzheimer von der MS lernen?',
       completedTime: 46,
       totalTime: 330,
       tag: 'episode 3',
       image: Episode2,
-      imageAlt: 'alt',
+      imageAlt: 'Biology course',
       link: "/"
     },
     {
-      title: '4/ Wechselwirkungen in der MS Therapie - Klinik und Pharmakologie',
+      title: 'Wechselwirkungen in der MS Therapie - Klinik und Pharmakologie',
       completedTime: 203,
       totalTime: 980,
       tag: 'episode 4',
       image: Episode4,
-      imageAlt: 'alt',
+      imageAlt: 'Biology course',
       link: "/"
     },
     {
-      title: '5/ Impfen bei MS zu Coronazeiten',
+      title: 'Impfen bei MS zu Coronazeiten',
       completedTime: 74,
       totalTime: 180,
       tag: 'episode 5',
       image: Episode4,
-      imageAlt: 'alt',
+      imageAlt: 'Biology course',
       link: "/"
     },
     {
-      title: '6/ MS bei Kindern und im Alter',
+      title: 'MS bei Kindern und im Alter',
       completedTime: 0,
       totalTime: 2000,
-      tag: 'last',
+      tag: 'episode 6',
       image: Episode4,
-      imageAlt: 'alt',
+      imageAlt: 'Biology course',
       link: "/"
     },
   ];

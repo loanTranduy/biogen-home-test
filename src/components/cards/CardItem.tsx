@@ -24,6 +24,7 @@ const CardItem:FC<Props> = ({score, image, imageAlt, title, follow, tag}) => {
         <BoxShadow>
             <Absolute>
                 <MaskRatio ratio="square" round>
+                    {/* //TODO srcSet  */}
                     <img src={image} alt={imageAlt}/>
                 </MaskRatio>
             </Absolute>
@@ -32,7 +33,7 @@ const CardItem:FC<Props> = ({score, image, imageAlt, title, follow, tag}) => {
                     {tag && <Tag backgroundColor="white">{tag}</Tag>}
                     {score && <Favorite icon={Star}>{score}</Favorite>}
                 </Horizontal>
-                <ButtonIcon onClick={() => console.log} icon={Play}/>
+                <ButtonIcon onClick={() => {}} icon={Play}/>
             </FlexBox>
             <Footer>
                 <AlignBottom>
@@ -42,7 +43,7 @@ const CardItem:FC<Props> = ({score, image, imageAlt, title, follow, tag}) => {
                 </AlignBottom>
                 <FlexCenter>
                     {follow && <p>{follow} Folgen</p>}
-                    <ButtonIcon onClick={() => console.log} icon={Plus}/>
+                    <ButtonIcon onClick={() => {}} icon={Plus}/>
                 </FlexCenter>
             </Footer>
         </BoxShadow>

@@ -12,27 +12,27 @@ export const mockedCards: TCardItem = [
     follow: 7,
     image: {
       src: Neurogenium,
-      alt: "/",
+      alt: "Neurogenium logo",
     }
   },
   {
-    title: 'DGM 2021 Nusinersen – Wirksamkeit bei 5q-SMA ist keine Frage Wirksamkeit bei 5q-SMA ist keine Frage ',
+    title: 'Experten-Interviews zur SMA',
     score: 4.7,
     tag: 'interviews',
     follow: 5,
     image: {
       src: Women,
-      alt: "/"
+      alt: "Teacher"
     }
   },
   {
-    title: 'Nusinersen – Wirksamkeit bei 5q-SMA ist keine Frage des Alters? amkeit bei 5q-SMA ist keine Frage des Alters?amkeit bei 5q-SMA ist keine Frage des Alters?amkeit bei 5q-SMA ist keine Frage des Alters?amkeit bei 5q-SMA ist keine Frage des Alters?',
+    title: 'Nusinersen – Wirksamkeit bei 5q-SMA ist keine Frage des Alters?',
     score: 4.1,
     tag: 'symposium',
     follow: 9,
     image: {
       src: DMG,
-      alt: "/"
+      alt: "DMG 2021 logo",
     }
   },
   {
@@ -42,7 +42,7 @@ export const mockedCards: TCardItem = [
     follow: 3,
     image: {
       src: Women,
-      alt: "/"
+      alt: "Teacher"
     }
   },
 ];
