@@ -6,8 +6,8 @@ import Arrow from '../../assets/icons/arrow.svg';
 const CustomCarouselButtonsGroup:FC<ButtonGroupProps> = ({ next, previous }) => {
     return (
       <>
-        <ButtonIcon onClick={previous && (() => previous())} icon={Arrow}/>
-        <ButtonIcon onClick={next && (() => next())} icon={Arrow}/>
+        <ButtonIcon name="previous slide" onClick={previous && (() => previous())} icon={Arrow}/>
+        <ButtonIcon name="next slide" onClick={next && (() => next())} icon={Arrow}/>
       </>
     );
   };

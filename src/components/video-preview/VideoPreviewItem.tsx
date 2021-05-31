@@ -4,6 +4,7 @@ import Tag from '../dumb/Tag';
 import ProgressBar from '../dumb/ProgressBar';
 import MultilineEllipsis from '../dumb/MultilineEllipsis';
 import { Box } from './VideoPreview.style';
+import { firstLetterUpperCase } from '../../styles/mixins';
 
 interface Props { 
     tag?: string, 
@@ -28,7 +29,7 @@ const VideoPreviewItem: React.FC<Props> = ({to, image, imageAlt, tag, completedT
 return (
         <Box href={to}>
             <MaskRatio ratio="video">
-                {/* //TODO srcSet  */}
+                {/* //TODO srcSet   + Lazy load spinner*/}
                 <img src={image} alt={imageAlt}/>
                 {tag && <Tag small>{tag}</Tag>}
                 {completedTime && <Tag backgroundColor="black70">{makeTimeReadable(completedTime)}</Tag>}
@@ -36,7 +37,7 @@ return (
             </MaskRatio>
             {title &&
             <MultilineEllipsis maxLine={2}>
-                <p>{title.charAt(0).toUpperCase() + title.slice(1)}</p>
+                <p>{firstLetterUpperCase(title)}</p>
             </MultilineEllipsis>
             }
         </Box>

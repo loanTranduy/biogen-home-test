@@ -9,6 +9,7 @@ import Star from '../../assets/icons/star.svg';
 import Play from '../../assets/icons/play.svg';
 import Plus from '../../assets/icons/plus.svg';
 import { Absolute, FlexBox, Horizontal, Footer, AlignBottom, FlexCenter } from './CardItem.style';
+import { firstLetterUpperCase } from '../../styles/mixins';
 
 type Props = {
     score?: number,
@@ -24,7 +25,7 @@ const CardItem:FC<Props> = ({score, image, imageAlt, title, follow, tag}) => {
         <BoxShadow>
             <Absolute>
                 <MaskRatio ratio="square" round>
-                    {/* //TODO srcSet  */}
+                    {/* //TODO srcSet   + Lazy load spinner*/}
                     <img src={image} alt={imageAlt}/>
                 </MaskRatio>
             </Absolute>
@@ -33,17 +34,17 @@ const CardItem:FC<Props> = ({score, image, imageAlt, title, follow, tag}) => {
                     {tag && <Tag backgroundColor="white">{tag}</Tag>}
                     {score && <Favorite icon={Star}>{score}</Favorite>}
                 </Horizontal>
-                <ButtonIcon onClick={() => {}} icon={Play}/>
+                <ButtonIcon name="play video" onClick={() => {}} icon={Play}/>
             </FlexBox>
             <Footer>
                 <AlignBottom>
                     <MultilineEllipsis maxLine={3}>
-                        <h5>{title}</h5>
+                        <h5>{firstLetterUpperCase(title)}</h5>
                     </MultilineEllipsis>
                 </AlignBottom>
                 <FlexCenter>
                     {follow && <p>{follow} Folgen</p>}
-                    <ButtonIcon onClick={() => {}} icon={Plus}/>
+                    <ButtonIcon name="follow" onClick={() => {}} icon={Plus}/>
                 </FlexCenter>
             </Footer>
         </BoxShadow>
