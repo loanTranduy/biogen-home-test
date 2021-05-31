@@ -12,6 +12,7 @@ export const InjectFont = createGlobalStyle`
              url('${PoppinsMediumWoff}') format('woff');
         font-weight: normal;
         font-style: normal;
+        font-display: swap;
     }
     
     @font-face {
@@ -20,6 +21,7 @@ export const InjectFont = createGlobalStyle`
              url('${PoppinsSemiBoldWoff}') format('woff');
         font-weight: normal;
         font-style: normal;
+        font-display: swap;
     }
 `
 
