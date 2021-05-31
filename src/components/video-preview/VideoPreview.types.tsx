@@ -2,11 +2,12 @@
 export type TVideoPreviewItemProps = { 
     tag?: string, 
     completedTime?: number,
-    image: any,
+    image: string,
     imageAlt: string,
     title: string,
     totalTime?: number,
-    link: string
+    link: string,
+    imageJpg?: string,
 }
 
 // Define the types for a video preview item collection

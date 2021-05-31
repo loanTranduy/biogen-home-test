@@ -7,6 +7,7 @@ import { media } from "../../styles/mediaqueries";
 const Button = styled.button`
     border-radius: 50%;
     border: none;
+    display: flex;
     background: ${buttonColors.initial.background};
     align-items: center;
     justify-content: center;
@@ -17,13 +18,6 @@ const Button = styled.button`
     svg{
         fill: ${buttonColors.initial.content};
         transition: all .2s ease-in-out; 
-        display: block;
-        display: inline-block;
-    }
-
-    >div{
-        display: contents;
-
     }
     
     ${media.md`
@@ -33,7 +27,7 @@ const Button = styled.button`
                 fill: ${buttonColors.hover.content};
             }
         }
-  @`}
+  `}
 `;
 
 type Props = {

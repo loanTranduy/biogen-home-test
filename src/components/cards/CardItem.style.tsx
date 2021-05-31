@@ -28,6 +28,7 @@ export const FlexBox = styled.div`
       svg{
         height: 20px;
       }
+
       ${media.md`
       &:hover {
             background: ${backgroundColors.progressBar};

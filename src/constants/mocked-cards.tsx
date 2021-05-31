@@ -1,6 +1,9 @@
 import Women from '../assets/images/cards/card-2.webp';
 import DMG from '../assets/images/cards/card-3.webp';
 import Neurogenium from '../assets/images/cards/card-1.webp';
+import WomenJpg from '../assets/images/cards/card-2.jpg';
+import DMGJpg from '../assets/images/cards/card-3.jpg';
+import NeurogeniumJpg from '../assets/images/cards/card-1.jpg';
 
 import { TCardItem } from '../components/cards/TCardItem.types';
 
@@ -13,6 +16,7 @@ export const mockedCards: TCardItem = [
     image: {
       src: Neurogenium,
       alt: "Neurogenium logo",
+      srcset: NeurogeniumJpg,
     }
   },
   {
@@ -22,7 +26,8 @@ export const mockedCards: TCardItem = [
     follow: 5,
     image: {
       src: Women,
-      alt: "Teacher"
+      alt: "Teacher",
+      srcset: WomenJpg,
     }
   },
   {
@@ -33,6 +38,7 @@ export const mockedCards: TCardItem = [
     image: {
       src: DMG,
       alt: "DMG 2021 logo",
+      srcset: DMGJpg,
     }
   },
   {
@@ -42,7 +48,8 @@ export const mockedCards: TCardItem = [
     follow: 3,
     image: {
       src: Women,
-      alt: "Teacher"
+      alt: "Teacher",
+      srcset: WomenJpg,
     }
   },
 ];

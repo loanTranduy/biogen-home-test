@@ -18,6 +18,7 @@ const CardCarousel = () => {
                             tag={card.tag} 
                             follow={card.follow}
                             score={card.score}
+                            imageJpg={card.image.srcset}
                             />
                     ))}
                 </MultiCarousel>

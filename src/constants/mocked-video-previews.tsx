@@ -1,6 +1,9 @@
 import Episode2 from '../assets/images/video-preview/episode-2.webp';
 import Episode3 from '../assets/images/video-preview/episode-3.webp';
 import Episode4 from '../assets/images/video-preview/episode-4.webp';
+import Episode2Jpg from '../assets/images/video-preview/episode-2.jpg';
+import Episode3Jpg from '../assets/images/video-preview/episode-3.jpg';
+import Episode4Jpg from '../assets/images/video-preview/episode-4.jpg';
 
 import { TVideoPreviewList } from '../components/video-preview/VideoPreview.types';
 
@@ -11,6 +14,7 @@ export const mockedVideoPreviews: TVideoPreviewList = [
       totalTime: 1200,
       tag: 'episode 1',
       image: Episode4,
+      imageJpg: Episode4Jpg,
       imageAlt: 'Biology course',
       link: "/"
     },
@@ -20,6 +24,7 @@ export const mockedVideoPreviews: TVideoPreviewList = [
       totalTime: 100,
       tag: 'episode 2',
       image: Episode3,
+      imageJpg: Episode2Jpg,
       imageAlt: 'Biology course',
       link: "/"
     },
@@ -29,6 +34,7 @@ export const mockedVideoPreviews: TVideoPreviewList = [
       totalTime: 330,
       tag: 'episode 3',
       image: Episode2,
+      imageJpg: Episode3Jpg,
       imageAlt: 'Biology course',
       link: "/"
     },
@@ -38,6 +44,7 @@ export const mockedVideoPreviews: TVideoPreviewList = [
       totalTime: 980,
       tag: 'episode 4',
       image: Episode4,
+      imageJpg: Episode4Jpg,
       imageAlt: 'Biology course',
       link: "/"
     },
@@ -47,6 +54,7 @@ export const mockedVideoPreviews: TVideoPreviewList = [
       totalTime: 180,
       tag: 'episode 5',
       image: Episode4,
+      imageJpg: Episode4Jpg,
       imageAlt: 'Biology course',
       link: "/"
     },
@@ -56,6 +64,7 @@ export const mockedVideoPreviews: TVideoPreviewList = [
       totalTime: 2000,
       tag: 'episode 6',
       image: Episode4,
+      imageJpg: Episode4Jpg,
       imageAlt: 'Biology course',
       link: "/"
     },
