@@ -7,8 +7,8 @@ const VideoPreviewCarousel = () => {
     const seeAll = 'Alle zeigen(' + mockedVideoPreviews.length + ')'
     
     return (
-        <Section title="Swiper library" withRightLink={seeAll} to="/">
-                <MultiCarousel>
+        <Section title="Zuletzt angesehen" withRightLink={seeAll} to="/">
+                <MultiCarousel withSubTitle>
                     {mockedVideoPreviews.map((video, i) => (
                                     <VideoPreviewItem 
                                     key={i}

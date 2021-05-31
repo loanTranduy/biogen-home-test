@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { media } from "../../styles/mediaqueries";
 import { gutterSmall, gutterMedium, gutterLarge, buttonSize } from "../../styles/variables";
+import { CarouselProps } from "./MultiCarousel";
 
 export const Container = styled.div`
 position: relative;
@@ -41,7 +42,8 @@ ${media.sm`
         bottom: -48px;;
     `}
     ${media.lg`
-      top: 83px;
+      top: ${(props: CarouselProps) => props.withSubTitle ? '68px' :  '50%'};
+      transform: ${(props: CarouselProps) => props.withSubTitle ? 'none' : 'translateY(-50%)'};
       bottom: auto;
     `}
   } 
@@ -49,12 +51,12 @@ ${media.sm`
   > button:first-of-type{
     right: 60px;
     ${media.lg`
-    right: auto;
-    left: -43px;
+      right: auto;
+      left: -43px;
     `}
   }
   > button:last-of-type{
-    transform:rotate(180deg) ;
+    transform:${(props: CarouselProps) => props.withSubTitle ? 'rotate(180deg)' : 'translateY(-50%) rotate(180deg)'};
     right: 0;
     ${media.lg`
       right: -43px;
