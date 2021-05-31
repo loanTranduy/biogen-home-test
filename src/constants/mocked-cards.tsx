@@ -1,6 +1,6 @@
-import Women from '../assets/images/cards/card-2.png'
-import DMG from '../assets/images/cards/card-3.png'
-import Neurogenium from '../assets/images/cards/card-1.png'
+import Women from '../assets/images/cards/card-2.webp';
+import DMG from '../assets/images/cards/card-3.webp';
+import Neurogenium from '../assets/images/cards/card-1.webp';
 
 import { TCardItem } from '../components/cards/TCardItem.types';
 

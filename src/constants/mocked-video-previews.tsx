@@ -1,6 +1,6 @@
-import Episode2 from '../assets/images/video-preview/episode-2.png'
-import Episode3 from '../assets/images/video-preview/episode-3.png'
-import Episode4 from '../assets/images/video-preview/episode-4.png'
+import Episode2 from '../assets/images/video-preview/episode-2.webp';
+import Episode3 from '../assets/images/video-preview/episode-3.webp';
+import Episode4 from '../assets/images/video-preview/episode-4.webp';
 
 import { TVideoPreviewList } from '../components/video-preview/VideoPreview.types';
 
