@@ -4,9 +4,12 @@ import 'react-multi-carousel/lib/styles.css';
 import { Container } from './MultiCarousel.style';
 import CustomCarouselButtonsGroup from './CustomCarouselButtonsGroup';
 
-const MultiCarousel:FC = ({children}) => {
+export type CarouselProps = {
+    withSubTitle?: boolean,
+}
+const MultiCarousel:FC<CarouselProps>= ({children, withSubTitle}) => {
     return (
-        <Container>
+        <Container withSubTitle={withSubTitle}>
             <Carousel
                 className="carousel"
                 infinite

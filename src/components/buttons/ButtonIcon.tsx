@@ -8,22 +8,30 @@ const Button = styled.button`
     border-radius: 50%;
     border: none;
     background: ${buttonColors.initial.background};
-    fill: ${buttonColors.initial.content};
     align-items: center;
     justify-content: center;
+    width: 48px;
+    height: 48px;
+    transition: all .2s ease-in-out;
+
+    svg{
+        fill: ${buttonColors.initial.content};
+        transition: all .2s ease-in-out; 
+    }
+
     >div{
         display: contents;
 
     }
+    
     ${media.md`
-        &:hover svg{
-            opacity: .6;
+        &:hover {
+            background: ${buttonColors.hover.background};
+            svg{
+                fill: ${buttonColors.hover.content};
+            }
         }
-  `}
-
-    svg{
-        transition: all .2s ease-in-out;
-    }
+  @`}
 `;
 
 type Props = {

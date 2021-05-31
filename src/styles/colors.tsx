@@ -39,19 +39,19 @@ export const colors= {
       content: colors.grey4
     },
     hover: {
-      border: colors.grey1,
-      background: colors.grey1,
-      content: colors.grey4
+      border: colors.grey4,
+      background: colors.grey4,
+      content: colors.grey1
     },
     focus: {
-      border: colors.grey1,
-      background: colors.grey1,
-      content: colors.grey4
+      border: colors.grey4,
+      background: colors.grey4,
+      content: colors.grey1
     },
     disabled: {
       border: colors.grey1,
       background: colors.grey1,
-      content: colors.grey4
+      content: colors.grey2
     }
   };
   
