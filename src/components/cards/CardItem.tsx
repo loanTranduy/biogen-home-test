@@ -17,16 +17,17 @@ type Props = {
     imageAlt: string,
     title: string,
     follow?: number,
-    tag?: string
+    tag?: string,
+    imageJpg?: string
 }
 
-const CardItem:FC<Props> = ({score, image, imageAlt, title, follow, tag}) => {
+const CardItem:FC<Props> = ({score, image, imageAlt, title, follow, tag, imageJpg}) => {
     return (
         <BoxShadow>
             <Absolute>
                 <MaskRatio ratio="square" round>
                     {/* //TODO srcSet   + Lazy load spinner*/}
-                    <img src={image} alt={imageAlt}/>
+                    <img src={image} srcSet={imageJpg} alt={imageAlt}/>
                 </MaskRatio>
             </Absolute>
             <FlexBox>     

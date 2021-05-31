@@ -19,6 +19,7 @@ const VideoPreviewCarousel = () => {
                                     tag={video.tag} 
                                     completedTime={video.completedTime} 
                                     totalTime={video.totalTime}
+                                    imageJpg={video.imageJpg}
                                     />
                             ))}
                 </MultiCarousel>

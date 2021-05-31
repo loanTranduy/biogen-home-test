@@ -16,8 +16,12 @@ const Box = styled.div<Props>`
     background: ${props => props.backgroundColor ? tagBackgroundColors[props.backgroundColor] : tagBackgroundColors.grey4};
     text-transform: uppercase;
     ${media.lg`
-    ${lineHeight(30)};
+        ${lineHeight(30)};
     `}
+
+    p{
+        vertical-align: -webkit-baseline-middle;
+    }
 `;
 
 type tagBackgroundColorsStrings = keyof typeof tagBackgroundColors;

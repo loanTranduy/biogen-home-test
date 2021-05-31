@@ -7,6 +7,7 @@ export type TCardItemProps = {
     image: {
         alt: string,
         src: string,
+        srcset: string
     },
     
 }

@@ -11,13 +11,14 @@ interface Props {
     to: string,
     completedTime?: number,
     image: string,
+    imageJpg?: string,
     imageAlt: string,
     title: string,
     totalTime?: number,
 }
 
 
-const VideoPreviewItem: React.FC<Props> = ({to, image, imageAlt, tag, completedTime, title, totalTime}) => {
+const VideoPreviewItem: React.FC<Props> = ({to, image, imageAlt, imageJpg, tag, completedTime, title, totalTime}) => {
 
     const makeTimeReadable = (t: number) => {
         const timeInSec =  t / 60;
@@ -29,8 +30,8 @@ const VideoPreviewItem: React.FC<Props> = ({to, image, imageAlt, tag, completedT
 return (
         <Box href={to}>
             <MaskRatio ratio="video">
-                {/* //TODO srcSet   + Lazy load spinner*/}
-                <img src={image} alt={imageAlt}/>
+                {/* //TODO srcSet 2x + Lazy load spinner*/}
+                <img src={image} srcSet={imageJpg} alt={imageAlt}/>
                 {tag && <Tag small>{tag}</Tag>}
                 {completedTime && <Tag backgroundColor="black70">{makeTimeReadable(completedTime)}</Tag>}
                 {completedTime !== 0 && <ProgressBar totalTime={totalTime} completedTime={completedTime}/>}
