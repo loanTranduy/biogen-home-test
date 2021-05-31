@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { backgroundColors, buttonColors, textColors } from "../../styles/colors";
+import { backgroundColors, textColors } from "../../styles/colors";
 import { media } from "../../styles/mediaqueries";
 import { flexBox, fontSize, lineHeight } from "../../styles/mixins";
 
@@ -27,19 +27,24 @@ export const FlexBox = styled.div`
       svg{
         height: 20px;
       }
-      ${media.lg`
-      width: 60px;
-      height: 60px;
-      svg{
-        height: 24px;
-      }
+      ${media.md`
       &:hover {
             background: ${backgroundColors.progressBar};
             svg{
                 fill: white;
         }
       }
+  `}
+
+      ${media.lg`
+      width: 60px;
+      height: 60px;
+      svg{
+        height: 24px;
+      }
+  
       `}
+      
   }
 
   height: 141px;

@@ -7,12 +7,13 @@ display: block;
 text-decoration: none;
 color: ${textColors.primary};
 
-&:hover{
-
-    > div > p{
-        text-decoration: underline;
+${media.md`
+    &:hover{
+        > div > p{
+            text-decoration: underline;
+        }
     }
-}
+ `}
 
 //Title
 > div > p{

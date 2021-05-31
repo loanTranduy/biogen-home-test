@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { media } from "../../styles/mediaqueries";
-import { gutterSmall, gutterMedium, gutterLarge, buttonSize } from "../../styles/variables";
+import { gutterSmall, gutterMedium, gutterLarge } from "../../styles/variables";
 import { CarouselProps } from "./MultiCarousel";
 
 export const Container = styled.div`
@@ -13,8 +13,10 @@ ${media.sm`
 
 .carousel{
     overflow: initial;
+    padding: ${(props: CarouselProps) => props.withBoxShadow ? "24px 0 32px" : 0};
+    margin: ${(props: CarouselProps) => props.withBoxShadow ? "-24px 0 -32px" : 0};
 
-    ${media.lg`
+    ${media.sm`
         overflow: hidden;
     `}
 }
@@ -33,17 +35,16 @@ ${media.sm`
   //buttons outside
   > button{
     position: absolute;
-    min-width: ${buttonSize}px;
-    min-height: ${buttonSize}px;
     font-size: 24px;
     display: none;
+    padding: 0;
     ${media.sm`
         display: flex;
-        bottom: -48px;;
+        bottom: -56px;
+        transform: ${(props: CarouselProps) => props.withSubTitle ? 'none' : 'translateY(-50%)'};
     `}
     ${media.lg`
       top: ${(props: CarouselProps) => props.withSubTitle ? '68px' :  '50%'};
-      transform: ${(props: CarouselProps) => props.withSubTitle ? 'none' : 'translateY(-50%)'};
       bottom: auto;
     `}
   } 
@@ -52,14 +53,14 @@ ${media.sm`
     right: 60px;
     ${media.lg`
       right: auto;
-      left: -43px;
+      left: -48px;
     `}
   }
   > button:last-of-type{
     transform:${(props: CarouselProps) => props.withSubTitle ? 'rotate(180deg)' : 'translateY(-50%) rotate(180deg)'};
     right: 0;
     ${media.lg`
-      right: -43px;
+      right: -48px;
     `}
   }
 `;

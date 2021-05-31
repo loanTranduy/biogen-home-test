@@ -6,10 +6,11 @@ import CustomCarouselButtonsGroup from './CustomCarouselButtonsGroup';
 
 export type CarouselProps = {
     withSubTitle?: boolean,
+    withBoxShadow?: boolean
 }
-const MultiCarousel:FC<CarouselProps>= ({children, withSubTitle}) => {
+const MultiCarousel:FC<CarouselProps>= ({children, withSubTitle, withBoxShadow}) => {
     return (
-        <Container withSubTitle={withSubTitle}>
+        <Container withSubTitle={withSubTitle} withBoxShadow={withBoxShadow}>
             <Carousel
                 className="carousel"
                 infinite
