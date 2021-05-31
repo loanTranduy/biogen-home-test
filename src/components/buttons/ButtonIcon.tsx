@@ -17,6 +17,8 @@ const Button = styled.button`
     svg{
         fill: ${buttonColors.initial.content};
         transition: all .2s ease-in-out; 
+        display: block;
+        display: inline-block;
     }
 
     >div{
