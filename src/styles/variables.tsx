@@ -9,7 +9,7 @@ export const borderRadius = 8;
 
 // Slider
 export const gutterSmall = 16;
-export const gutterMedium = 42;
+export const gutterMedium = 24;
 export const gutterLarge = 42;
 
 export const buttonSize = 48;

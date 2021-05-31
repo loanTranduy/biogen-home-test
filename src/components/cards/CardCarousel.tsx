@@ -8,7 +8,7 @@ const CardCarousel = () => {
     
     return (
         <Section title="Neu auf BiogenLinc" withRightLink={seeAll} to="/">
-                <MultiCarousel>
+                <MultiCarousel withBoxShadow>
                     {mockedCards.map((card, i) => (
                             <CardItem 
                             key={i}
