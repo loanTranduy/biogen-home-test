@@ -42,7 +42,7 @@ type Props = {
 }
 
 const ButtonIcon:FC<Props> = ({onClick, icon, disabled, name}) => (
-  <Button name={name} onClick={onClick} disabled={disabled}>
+  <Button aria-label={name} onClick={onClick} disabled={disabled}>
     <ReactSVG src={icon} />
   </Button>
 );
