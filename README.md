@@ -1,3 +1,24 @@
+# Front-end comments
+
+Various comments have been left in the .tsx files were improvement should be done with when more time is allowed for this project.
+
+Ex: Responsive images system, few dynamic values,..
+
+# Design comments
+
+## Modifications
+
+Spacings, sizes,.. have been changed to be multiples of 4/8px in order to be consistent.
+
+## Accessibility Remarks
+
+The blue "#0087CD" shouldn't be used on a white background. His contrast is too low. The color system must be checked beforehand with a [contrast checker](https://webaim.org/resources/contrastchecker/?fcolor=0088CC&bcolor=FFFFFF).
+
+# Tested environements
+
+Desktop: chrome v90.0.4430.212, Firefox v74.0.1 , Microsoft Edge v91.0.864.37, safari v12.1.2
+Mobile IOS/Android: chrome v90.0.4430.212, Firefox v74.0.1 , safari v12.1.2
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

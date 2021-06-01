@@ -51,6 +51,9 @@ ${media.sm`
 
   > button:first-of-type{
     right: 60px;
+    ${media.sm`
+      right: 72px;
+    `}
     ${media.lg`
       right: auto;
       left: -48px;
@@ -59,6 +62,9 @@ ${media.sm`
   > button:last-of-type{
     transform:${(props: CarouselProps) => props.withSubTitle ? 'rotate(180deg)' : 'translateY(-50%) rotate(180deg)'};
     right: 0;
+    ${media.sm`
+      right: 12PX;
+    `}
     ${media.lg`
       right: -48px;
     `}
