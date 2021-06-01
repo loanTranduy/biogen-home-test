@@ -17,6 +17,7 @@ The blue "#0087CD" shouldn't be used on a white background. His contrast is too 
 # Tested environements
 
 Desktop: chrome v90.0.4430.212, Firefox v74.0.1 , Microsoft Edge v91.0.864.37, safari v12.1.2
+
 Mobile IOS/Android: chrome v90.0.4430.212, Firefox v74.0.1 , safari v12.1.2
 
 # Getting Started with Create React App
